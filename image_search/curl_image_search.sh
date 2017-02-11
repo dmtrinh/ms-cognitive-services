@@ -2,7 +2,7 @@
 
 API_ENDPOINT=https://api.cognitive.microsoft.com/bing/v5.0/images/search
 
-if [ ! -z $1 ]
+if [ $# -gt 1 ]
 then
     # Grab all parameters, starting with the second, as one query string
     QUERY="${@:2}"
